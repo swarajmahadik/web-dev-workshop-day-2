@@ -1,0 +1,58 @@
+@keyframes example {
+    0%{
+       left: -100px;
+       opacity: 0;
+    }
+     100%{
+        left: 50px;
+        opacity: 1;
+     }
+    
+}
+@keyframes example2 {
+   0%{
+      left: 200px;
+      opacity: 0;
+   }
+    100%{
+       left: 50px;
+       opacity: 1;
+    }
+   
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 20PX;
+    left: 50px;
+    animation: example 1s ease ;
+    animation-delay: 1s;
+   opacity: 1;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   
+}
+p::before{
+   content:"🔐";
+}
+p::after{
+   content:"404 Not found";
+}
+.box:active{
+   transform: scale(1.1);
+
+}
+.box:nth-child(even){
+   animation: example2 3s ease 2s ;
+}
+/* .box:hover{
+    animation: example 1s ease ;
+    v
+} */
